@@ -60,12 +60,12 @@ export const OverlaySection = (): JSX.Element => {
 
       {/* Tablet & Mobile Version (for md and smaller) */}
       <div className="block lg:hidden">
-        <Card className="relative rounded-[20px] overflow-hidden mb-8 mx-4">
+        <Card className="relative rounded-[20px] overflow-hidden mb-8 mx-4 py-8">
           <div className="relative h-[500px]">
             <img className="w-full h-full object-cover" alt="Mask group" src="/mask-group.png" />
             <CardContent className="absolute inset-0 flex flex-col items-center justify-center p-6 bg-[#fffafad9] backdrop-blur-md">
-              <div className="flex flex-col items-center gap-6 w-full">
-                <div className="flex flex-col items-center gap-2 text-center">
+              <div className="flex flex-col items-center gap-6 w-full" >
+                <div className="flex flex-col items-center gap-2 text-center my">
                   <h2 className="text-3xl font-bold font-['Space_Grotesk',Helvetica]">
                     <span className="text-[#232323]">We let </span>
                     <span className="text-primary-red">our numbers</span>
