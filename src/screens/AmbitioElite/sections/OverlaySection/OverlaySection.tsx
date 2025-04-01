@@ -60,40 +60,41 @@ export const OverlaySection = (): JSX.Element => {
 
       {/* Tablet & Mobile Version (for md and smaller) */}
       <div className="block lg:hidden">
-        <Card className="relative rounded-[20px] overflow-hidden mb-8 mx-4 py-8">
-          <div className="relative h-[500px]">
-            <img className="w-full h-full object-cover" alt="Mask group" src="/mask-group.png" />
-            <CardContent className="absolute inset-0 flex flex-col items-center justify-center p-6 bg-[#fffafad9] backdrop-blur-md">
-              <div className="flex flex-col items-center gap-6 w-full" >
-                <div className="flex flex-col items-center gap-2 text-center my">
-                  <h2 className="text-3xl font-bold font-['Space_Grotesk',Helvetica]">
-                    <span className="text-[#232323]">We let </span>
-                    <span className="text-primary-red">our numbers</span>
-                    <span className="text-[#232323]"> do the talking</span>
-                  </h2>
-                  <p className="text-lg font-semibold font-['Nunito_Sans',Helvetica] text-grey-500">
-                    Our users love us and we know you will to! Explore our products.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-8 w-full">
-                  {statistics.map((stat, index) => (
-                    <div key={index} className="flex flex-col items-center">
-                      <span className="text-5xl font-bold font-['Space_Grotesk',Helvetica] text-primary-red">
-                        {stat.value}
-                      </span>
-                      <span className="text-xl font-medium font-['Space_Grotesk',Helvetica] text-grey-500">
-                        {stat.description}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </CardContent>
-            <div className="absolute w-[200px] h-[200px] top-[150px] right-[-50px] bg-[#f72e38] rounded-full blur-[50px] opacity-20" />
-            <div className="absolute w-[200px] h-[200px] top-[-100px] left-[-50px] bg-[#f72e38] rounded-full blur-[50px] opacity-20" />
+  <Card className="relative rounded-[20px] overflow-hidden mb-8 mx-4 py-8">
+    <div className="relative h-[500px] flex items-center justify-center">
+      <img className="w-full h-full object-cover" alt="Mask group" src="/mask-group.png" />
+      <CardContent className="absolute inset-0 flex flex-col items-center justify-center p-6 bg-[#fffafad9] backdrop-blur-md text-center">
+        <div className="flex flex-col items-center gap-6 w-full">
+          <div className="flex flex-col items-center gap-2 text-center">
+            <h2 className="text-3xl font-bold font-['Space_Grotesk',Helvetica]">
+              <span className="text-[#232323]">We let </span>
+              <span className="text-primary-red">our numbers</span>
+              <span className="text-[#232323]"> do the talking</span>
+            </h2>
+            <p className="text-lg font-semibold font-['Nunito_Sans',Helvetica] text-grey-500">
+              Our users love us and we know you will too! Explore our products.
+            </p>
           </div>
-        </Card>
-      </div>
+          <div className="flex flex-col items-center gap-8 w-full">
+            {statistics.map((stat, index) => (
+              <div key={index} className="flex flex-col items-center text-center">
+                <span className="text-5xl font-bold font-['Space_Grotesk',Helvetica] text-primary-red">
+                  {stat.value}
+                </span>
+                <span className="text-xl font-medium font-['Space_Grotesk',Helvetica] text-grey-500">
+                  {stat.description}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </CardContent>
+      <div className="absolute w-[200px] h-[200px] top-[150px] right-[-50px] bg-[#f72e38] rounded-full blur-[50px] opacity-20" />
+      <div className="absolute w-[200px] h-[200px] top-[-100px] left-[-50px] bg-[#f72e38] rounded-full blur-[50px] opacity-20" />
+    </div>
+  </Card>
+</div>
+
     </>
   );
 };
