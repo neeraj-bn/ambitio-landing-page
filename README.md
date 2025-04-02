@@ -3,6 +3,9 @@
 ## Overview
 The **Ambitio Landing Page** is a visually engaging and interactive hero section, crafted based on a Figma design. It features smooth animations and interactive elements to enhance user experience and engagement.
 
+## Live Demo
+[Ambitio Landing Page](https://ambitio-landing-page.netlify.app/)
+
 ## Technologies Used
 - **React**: For building the user interface.
 - **Vite**: For fast development and optimized builds.
@@ -25,7 +28,4 @@ The **Ambitio Landing Page** is a visually engaging and interactive hero section
    npm run dev
    ```
 4. Open the provided local URL in your browser.
-
-## Live Demo
-[Ambitio Landing Page](https://ambitio-landing-page.netlify.app/)
 
