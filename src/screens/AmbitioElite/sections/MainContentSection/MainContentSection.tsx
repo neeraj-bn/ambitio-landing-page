@@ -427,8 +427,8 @@ export const MainContentSection = (): JSX.Element => {
       </div>
 
       {/* Content section */}
-      <div className="flex flex-col items-center justify-center gap-6 max-w-3xl mx-auto text-center px-4">
-  <div className="flex flex-col items-center justify-center gap-2">
+      <div className="flex flex-col items-center justify-center gap-4 max-w-3xl mx-auto text-center px-4">
+  <div className="flex flex-col items-center justify-center gap-0">
     <div className="flex flex-col items-center">
       <h1 className="font-semibold text-[#232323] text-6xl leading-[66px] mt-[-1px] mobile-headline">
         Give the best shot
