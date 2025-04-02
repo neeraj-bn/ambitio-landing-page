@@ -111,7 +111,7 @@ export const NavSection = (): JSX.Element => {
       {/* Mobile Menu Button */}
       <button className="lg:hidden text-[#212121]" onClick={toggleMenu}>
         {menuOpen ? (
-          <img src="/Icon.png" alt="Close Menu" className="w-6 h-6" />
+          <XIcon className="w-6 h-6 text-red-600" />
         ) : (
           <img src="/Icon.png" alt="Open Menu" className="w-6 h-6" />
         )}
@@ -119,36 +119,36 @@ export const NavSection = (): JSX.Element => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-  <div className="absolute top-16 left-0 w-full bg-white shadow-lg p-6 flex flex-col gap-4 lg:hidden z-50">
-    {navItems.map((item, index) => (
-      <a
-        key={index}
-        href="#"
-        className="text-lg font-medium text-[#212121]"
-      >
-        {item.label}
-      </a>
-    ))}
-    {specialItems.map((item, index) => (
-      <div key={`special-${index}`} className="flex items-center gap-2">
-        {item.icon}
-        <span className="text-lg font-medium text-[#212121]">
-          {item.label}
-        </span>
-      </div>
-    ))}
-    {/* CTA Button inside Mobile Menu */}
-    <Button
-      variant="outline"
-      className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl border-2 border-solid border-[#b1060f] bg-transparent hover:bg-transparent mt-4"
-    >
-      <PhoneIcon className="w-5 h-5 text-[#b1060f]" />
-      <span className="font-bold text-[#b1060f] text-base">
-        Speak with our Experts
-      </span>
-    </Button>
-  </div>
-)}
+        <div className="absolute top-16 left-0 w-full bg-white shadow-lg p-6 flex flex-col gap-4 lg:hidden z-50">
+          {navItems.map((item, index) => (
+            <a
+              key={index}
+              href="#"
+              className="text-lg font-medium text-[#212121]"
+            >
+              {item.label}
+            </a>
+          ))}
+          {specialItems.map((item, index) => (
+            <div key={`special-${index}`} className="flex items-center gap-2">
+              {item.icon}
+              <span className="text-lg font-medium text-[#212121]">
+                {item.label}
+              </span>
+            </div>
+          ))}
+          {/* CTA Button inside Mobile Menu */}
+          <Button
+            variant="outline"
+            className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl border-2 border-solid border-[#b1060f] bg-transparent hover:bg-transparent mt-4"
+          >
+            <PhoneIcon className="w-5 h-5 text-[#b1060f]" />
+            <span className="font-bold text-[#b1060f] text-base">
+              Speak with our Experts
+            </span>
+          </Button>
+        </div>
+      )}
 
       {/* CTA Button */}
       <Button
